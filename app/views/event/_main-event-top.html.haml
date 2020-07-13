@@ -1,0 +1,297 @@
+.main-event-top
+  .heading
+    .image-content
+      =image_tag src="smile.jpg"
+  .search-contents
+    .seach-text
+      =icon("fa", "home", class: "home") 
+      %p KEYWORD 
+    .seach-box
+      %form.form{:action => "", :method => "get"}
+        %input.seach-form{:name => "", :placeholder => "キーワードを入力", :type => "text"}/
+        %input.seach-btn{:type => "submit", :value => "検索"}/
+      %p 住宅見学会だけでなく、リフォーム・エクステリア・住宅関連SHOPなどのイベント情報も検索できます
+      -# = form_with "" do |f|
+      -#   = f.text_field "", placeholder: "キーワードを入力して下さい", value: "", class: "seach-form"
+      -#   = f.submit "検索", class: "search-btn"
+  .housing-event
+    .title
+      %p 開催中、近日開催の見学会・イベントをPickUp!!
+  .event-contents
+    .event-box
+      .company-box 
+        .name SmileHouseDesign
+        .logo
+          =link_to "#" do
+            =image_tag src="facebook.png", size: "23"
+        .logo
+          =link_to "#" do 
+            =image_tag src="insta.jpg", size: "23"
+      .event-info
+        .day
+          %p 2020.7/2(土)〜7/10(日)
+        .title
+          OPEN HOUSE!!
+        .image-box
+          =image_tag src="event_1.jpg"
+        %ul.place-box
+          %li.place-title
+            開催場所
+          %li.address 
+            豊橋市豊橋町1-1
+        %ul.time-box
+          %li.time-title
+            開催時間
+          %li.time 
+            10:00〜17:00  
+        .details-box
+          =link_to "/event/show", class: "details-link" do
+            詳細を見る
+    .event-box
+      .company-box 
+        .name （株）Smile工務店
+        .logo
+          =link_to "#" do
+            =image_tag src="facebook.png", size: "23"
+        .logo
+          =link_to "#" do 
+            =image_tag src="insta.jpg", size: "23"
+      .event-info
+        .day
+          %p 2020.8/2(土)〜8/10(日)
+        .title
+          新築完成見学会開催!!
+        .image-box
+          =image_tag src="event_2.jpg"
+        %ul.place-box
+          %li.place-title
+            開催場所
+          %li.address 
+            浜松市中区浜松1-1
+        %ul.time-box
+          %li.time-title
+            開催時間
+          %li.time 
+            10:00〜17:00  
+        .details-box
+          =link_to "", class: "details-link" do
+            詳細を見る
+    .event-box
+      .company-box 
+        .name Smile建築
+        .logo
+          =link_to "#" do
+            =image_tag src="facebook.png", size: "23"
+        .logo
+          =link_to "#" do 
+            =image_tag src="insta.jpg", size: "23"
+      .event-info
+        .day
+          %p 2020.9/2(土)〜9/10(日)
+        .title
+          住宅相談機開催!!
+        .image-box
+          =image_tag src="event_3.jpg"
+        %ul.place-box
+          %li.place-title
+            開催場所
+          %li.address 
+            田原市田原町1-1
+        %ul.time-box
+          %li.time-title
+            開催時間
+          %li.time 
+            10:00〜17:00  
+        .details-box
+          =link_to root_path, class: "details-link" do
+            詳細を見る
+  .event-contents
+    .event-box
+      .company-box 
+        .name SmileHouseDesign
+        .logo
+          =link_to "#" do
+            =image_tag src="facebook.png", size: "23"
+        .logo
+          =link_to "#" do 
+            =image_tag src="insta.jpg", size: "23"
+      .event-info
+        .day
+          %p 2020.7/2(土)〜7/10(日)
+        .title
+          OPEN HOUSE!!
+        .image-box
+          =image_tag src="event_1.jpg"
+        %ul.place-box
+          %li.place-title
+            開催場所
+          %li.address 
+            豊橋市豊橋町1-1
+        %ul.time-box
+          %li.time-title
+            開催時間
+          %li.time 
+            10:00〜17:00  
+        .details-box
+          =link_to root_path, class: "details-link" do
+            詳細を見る
+    .event-box
+      .company-box 
+        .name （株）Smile工務店
+        .logo
+          =link_to "#" do
+            =image_tag src="facebook.png", size: "23"
+        .logo
+          =link_to "#" do 
+            =image_tag src="insta.jpg", size: "23"
+      .event-info
+        .day
+          %p 2020.8/2(土)〜8/10(日)
+        .title
+          新築完成見学会開催!!
+        .image-box
+          =image_tag src="event_2.jpg"
+        %ul.place-box
+          %li.place-title
+            開催場所
+          %li.address 
+            浜松市中区浜松1-1
+        %ul.time-box
+          %li.time-title
+            開催時間
+          %li.time 
+            10:00〜17:00  
+        .details-box
+          =link_to root_path, class: "details-link" do
+            詳細を見る
+    .event-box
+      .company-box 
+        .name Smile建築
+        .logo
+          =link_to "#" do
+            =image_tag src="facebook.png", size: "23"
+        .logo
+          =link_to "#" do 
+            =image_tag src="insta.jpg", size: "23"
+      .event-info
+        .day
+          %p 2020.9/2(土)〜9/10(日)
+        .title
+          住宅相談機開催!!
+        .image-box
+          =image_tag src="event_3.jpg"
+        %ul.place-box
+          %li.place-title
+            開催場所
+          %li.address 
+            田原市田原町1-1
+        %ul.time-box
+          %li.time-title
+            開催時間
+          %li.time 
+            10:00〜17:00  
+        .details-box
+          =link_to root_path, class: "details-link" do
+            詳細を見る
+  .event-contents
+    .event-box
+      .company-box 
+        .name SmileHouseDesign
+        .logo
+          =link_to "#" do
+            =image_tag src="facebook.png", size: "23"
+        .logo
+          =link_to "#" do 
+            =image_tag src="insta.jpg", size: "23"
+      .event-info
+        .day
+          %p 2020.7/2(土)〜7/10(日)
+        .title
+          OPEN HOUSE!!
+        .image-box
+          =image_tag src="event_1.jpg"
+        %ul.place-box
+          %li.place-title
+            開催場所
+          %li.address 
+            豊橋市豊橋町1-1
+        %ul.time-box
+          %li.time-title
+            開催時間
+          %li.time 
+            10:00〜17:00  
+        .details-box
+          =link_to root_path, class: "details-link" do
+            詳細を見る
+    .event-box
+      .company-box 
+        .name （株）Smile工務店
+        .logo
+          =link_to "#" do
+            =image_tag src="facebook.png", size: "23"
+        .logo
+          =link_to "#" do 
+            =image_tag src="insta.jpg", size: "23"
+      .event-info
+        .day
+          %p 2020.8/2(土)〜8/10(日)
+        .title
+          新築完成見学会開催!!
+        .image-box
+          =image_tag src="event_2.jpg"
+        %ul.place-box
+          %li.place-title
+            開催場所
+          %li.address 
+            浜松市中区浜松1-1
+        %ul.time-box
+          %li.time-title
+            開催時間
+          %li.time 
+            10:00〜17:00  
+        .details-box
+          =link_to root_path, class: "details-link" do
+            詳細を見る
+    .event-box
+      .company-box 
+        .name Smile建築
+        .logo
+          =link_to "#" do
+            =image_tag src="facebook.png", size: "23"
+        .logo
+          =link_to "#" do 
+            =image_tag src="insta.jpg", size: "23"
+      .event-info
+        .day
+          %p 2020.9/2(土)〜9/10(日)
+        .title
+          住宅相談機開催!!
+        .image-box
+          =image_tag src="event_3.jpg"
+        %ul.place-box
+          %li.place-title
+            開催場所
+          %li.address 
+            田原市田原町1-1
+        %ul.time-box
+          %li.time-title
+            開催時間
+          %li.time 
+            10:00〜17:00  
+        .details-box
+          =link_to root_path, class: "details-link" do
+            詳細を見る
+  .page-content
+    .pagination
+      .page-search
+        .left-content
+          150 件のイベントが掲載中!!
+        .right-content
+          %a.pager_num.is-current{:href => ""} 1
+          %a.pager_num{:href => "", :rel => "next"} 2
+          %a.pager_num{:href => ""} 3
+          %a.pager_num{:href => ""} 4
+          %a.pager_num{:href => ""} 5
+          %a.pager_next{:href => ""} 次へ
+          -# = paginate("")
+

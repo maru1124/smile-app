@@ -1,0 +1,170 @@
+.main-event-new
+  = form_with do |f|
+    .detail-content
+      .company-detail
+        %ul.main-title
+          %li 会社情報
+          %li.required 必須
+        .company-detail-form        
+          .title
+            会社名
+          .form
+            .text-form
+              = f.text_field :"name", placeholder:"20文字まで", value: ""
+        .company-detail-form
+          .title
+            電話番号
+          .form
+            .text-form
+              = f.telephone_field	 :"company-phone-number", placeholder: "半角数字、-(ハイフン)必須", value: ""
+        .company-detail-form
+          .title
+            ジャンル
+          .form
+            .text-form
+              = f.text_field :"genre", placeholder: "例) 新築/リフォーム/外構/土地相談", value: ""
+      %hr
+      .event-detail-top
+        %ul.main-title
+          %li イベント情報
+          %li.required 必須
+        .event
+          .title
+            開催日時
+          .form
+            .text-form
+              = f.text_field :"day", placeholder:"例) 12/12(土)〜12/12(日)", value: ""
+        .event
+          .title
+            イベントタイトル
+          .form
+            .text-form
+              = f.text_field :"title", placeholder:"20文字まで", value: ""
+        .event
+          .title
+            開催会場
+          .form
+            .text-form
+              = f.text_field :"place", placeholder:"例) 豊橋市豊橋町10-10", value: ""
+        .event
+          .title
+            開催時間
+          .form
+            .text-form
+              = f.text_field :"time", placeholder:"例) 10:00〜17:00、①10:00〜、②11:00〜", value: ""
+        .event
+          .title
+            駐車場
+          .form
+            .text-form
+              = f.text_field :"parking", placeholder:"例) 有り、２台有り", value: ""
+        .event
+          .title
+            予約専用電話番号
+          .form
+            .text-form
+              = f.telephone_field	 :"event-phone-number", placeholder: "半角数字、ー(ハイフン)必須", value: ""
+        .event-image-top
+          .title
+            施工写真(イベント詳細TOP)
+          .form
+            .label-content
+              %label{for: "file-input", class: "label-box", id: "label-box--0"}
+                %p.text クリックしてファイルをアップロード
+                %p.texy-2 ※画像サイズは3MBまで
+                = f.file_field :"image-top", class: "hidden-field", id: "file-input"
+                
+      %hr
+      .event-detail-box
+        %ul.main-title
+          %li 施工物件詳細
+          %li.required 必須
+        .highlight-point
+          .title
+            見どころポイント①
+          .form
+            .text-form
+              = f.text_area :"day", placeholder:"完成物件の特徴(必須60文字以内) ※１列25文字 (間取り、動線、素材、機能性、雰囲気など)", value: ""
+        .highlight-point
+          .title
+            見どころポイント②
+          .form
+            .text-form
+              = f.text_area :"day", placeholder:"完成物件の特徴(必須60文字以内) ※１列25文字 (間取り、動線、素材、機能性、雰囲気など)", value: ""
+        .highlight-point
+          .title
+            見どころポイント③
+          .form
+            .text-form
+              = f.text_area :"day", placeholder:"完成物件の特徴(必須60文字以内) ※１列25文字 (間取り、動線、素材、機能性、雰囲気など)", value: ""
+        .house-data
+          .title
+            HOUSE DATA 【家族構成】
+          .form
+            .text-form
+              = f.text_field :"parking", placeholder:"例) ご夫婦+お子さま2人", value: ""
+        .house-data
+          .title
+            HOUSE DATA 【間取り】
+          .form
+            .text-form
+              = f.text_field :"parking", placeholder:"例) 4LDK+WIC+納戸+パントリー", value: ""
+        .house-data
+          .title
+            HOUSE DATA 【敷地面積】
+          .form
+            .text-form
+              = f.text_field :"parking", placeholder:"例) 343.00㎡/103.75坪", value: ""
+        .house-data
+          .title
+            HOUSE DATA 【延床面積】
+          .form
+            .text-form
+              = f.text_field :"parking", placeholder:"例) 111.79㎡/33.75坪", value: ""
+      %hr
+      .detail-image-box
+        .title
+          施工写真(見どころポイント-メイン)
+        .form
+          .label-content
+            %label{for: "file-input", class: "label-box", id: "label-box--0"}
+              %p.text クリックしてファイルをアップロード
+              %p.texy-2 ※画像サイズは3MBまで
+              = f.file_field :"image-top", class: "hidden-field", id: "file-input"
+        .detail-image-box
+          .title
+            %p 施工写真(見どころポイント-サブ)
+          .form
+            .label-content
+              %label{for: "file-input", class: "label-box", id: "label-box--0"}
+                %p.text クリックしてファイルをアップロード
+                %p.texy-2 ※必ず3枚アップロードしてください (1ファイル3MBまで)
+                = f.file_field :"image-top", class: "hidden-field", id: "file-input"
+      %hr
+      .link-box
+        %ul.main-title
+          %li 会社ホームページ・SNSリンク先URL
+          %li.required 任意
+        .company-link
+          .title
+            会社HP(ホームページ)URL
+          .form
+            .text-form
+              = f.url_field :"parking", placeholder:"例) http://example.com", value: ""
+        .company-link
+          .title
+            SNS(facebook)URL
+          .form
+            .text-form
+              = f.url_field :"parking", placeholder:"例) http://www.facebook.com/user", value: ""
+        .company-link
+          .title
+            SNS(instagram)URL
+          .form
+            .text-form
+              = f.url_field :"parking", placeholder:"例) https://www.instagram.com/user", value: ""
+      %hr
+      .submit-box
+        .action-btn
+          = f.submit "投稿する", class: "btn", disabled: true
+          = link_to "TOPページにもどる", root_path, class: "return"

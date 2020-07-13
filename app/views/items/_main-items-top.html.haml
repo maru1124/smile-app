@@ -1,0 +1,311 @@
+.main-items-top
+  .items-top
+    .title-contents
+      .title
+        Smile Interior Shop
+      .search-box
+        %form.form{:action => "", :method => "get"}
+          %input.seach-form{:name => "", :placeholder => "カテゴリを入力", :type => "text"}/
+          %input.seach-btn{:type => "submit", :value => "検索"}/
+    .category-contents
+      %ul.category-box
+        %li.living
+          =link_to "" do
+            %p.jap リビング&寝具
+            %p.eng Living Furniture
+        %li.living
+          =link_to "" do
+            %p.jap リビング&寝具
+            %p.eng Living Furniture
+        %li.bed
+          =link_to "" do
+            %p.jap ベッド・寝具
+            %p.eng Bed & Bedding
+        %li.storage
+          =link_to "" do
+            %p.jap 収納家具
+            %p.eng Storage Furniture
+        %li.desk
+          =link_to "" do
+            %p.jap デスク&チェア
+            %p.eng Desk & Chair
+        %li.interior
+          =link_to "" do
+            %p.jap インテリア照明
+            %p.eng Interior Lighting
+        %li.dining
+          =link_to "" do
+            %p.jap ダイニング家具
+            %p.eng Dining Furniture
+        %li.garden
+          =link_to "" do
+            %p.jap ガーデン家具
+            %p.eng Garden Furniture
+  .image-contents
+    %ul.coordinate-title
+      %li.title
+        COORDINATE
+      %li.sub-title
+        コーディネート一覧
+        =link_to "" do
+          =icon("fas", "play-circle", class: "play-circle")
+    .image-content
+      =image_tag src="smile_cod2.jpg"
+  .items-contents
+    .new-items-contents
+      .new-items-title-box
+        %ul.title-box
+          %li.eng NEW ARRIVAL  
+          %li.jap 新着アイテムの紹介
+        %ul.items-list-link
+          %p 一覧はこちら
+          =link_to "" do
+            =icon("fas", "play-circle", class: "play-circle")
+      .new-items-box
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_1.jpg"
+          .name
+            日本製ローテレビ台
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_2.jpg"
+          .name
+            ダイニングテーブル
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_3.jpg"
+          .name
+            収納付ベッド[クイーン]
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_4.jpg"
+          .name
+            3人掛け カウチソファ
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_5.jpg"
+          .name
+            2人掛け レトロソファ
+          .price
+            ¥13,000
+      .new-items-box-2
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_1.jpg"
+          .name
+            日本製ローテレビ台
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_2.jpg"
+          .name
+            ダイニングテーブル
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_3.jpg"
+          .name
+            収納付ベッド[クイーン]
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_4.jpg"
+          .name
+            3人掛け カウチソファ
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_5.jpg"
+          .name
+            2人掛け レトロソファ
+          .price
+            ¥13,000
+
+    .ranking-items-contents
+      .ranking-items-title-box
+        %ul.title-box
+          %li.eng RANKING  
+          %li.jap 人気ランキング
+        %ul.ranking-list
+          %p ランキングをもっと見る
+          =link_to "" do
+            =icon("fas", "play-circle", class: "play-circle")
+      .ranking-items-box
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_1.jpg"
+            %p 1
+          .name
+            日本製ローテレビ台
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_2.jpg"
+            %p 2
+          .name
+            ダイニングテーブル
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_3.jpg"
+            %p 3
+          .name
+            収納付ベッド[クイーン]
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_4.jpg"
+            %p 4
+          .name
+            3人掛け カウチソファ
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_5.jpg"
+            %p 5
+          .name
+            2人掛け レトロソファ
+          .price
+            ¥13,000
+    
+    .new-items-contents
+      .new-items-title-box
+        %ul.title-box
+          %li.eng RECOMMEND  
+          %li.jap あなたにオススメ!
+        %ul.items-list-link
+          %p おすすめ一覧を見る
+          =link_to "" do
+            =icon("fas", "play-circle", class: "play-circle")
+      .new-items-box
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_1.jpg"
+          .name
+            日本製ローテレビ台
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_2.jpg"
+          .name
+            ダイニングテーブル
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_3.jpg"
+          .name
+            収納付ベッド[クイーン]
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_4.jpg"
+          .name
+            3人掛け カウチソファ
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_5.jpg"
+          .name
+            2人掛け レトロソファ
+          .price
+            ¥13,000
+      .new-items-box-2
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_1.jpg"
+          .name
+            日本製ローテレビ台
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_2.jpg"
+          .name
+            ダイニングテーブル
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_3.jpg"
+          .name
+            収納付ベッド[クイーン]
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_4.jpg"
+          .name
+            3人掛け カウチソファ
+          .price
+            ¥13,000
+        .item-num
+          .items-image
+            =link_to "" do
+              =image_tag src="item_5.jpg"
+          .name
+            2人掛け レトロソファ
+          .price
+            ¥13,000
+  .bottom-link-contents
+    .smile-new-app
+      .text-box
+        %P.main Smileアプリを持ち歩こう!
+        %P.sub GET THE SMILE APP
+      .link-box
+        =link_to "" do
+          =image_tag src="app-store.png"
+        =link_to "" do
+          =image_tag src="google-play.png"
+    .smile-new-account
+      .text-box
+        %p.main 会員登録して買い物を楽しもう!
+        %p.sub JOIN THE SMILE
+      .link-box
+        .link-back
+          =link_to "" do
+            CHECK →

@@ -1,0 +1,113 @@
+.main-event-detail
+  .detail-content
+    .company-detail
+      .company-name
+        SmileHouseDesign
+      %ul.company-info
+        %li.company-phone-number
+          %p.title 電話番号：
+          %p 000-000-0000
+        %li.company-genre
+          %p.title ジャンル：
+          %p 新築/リフォーム/土地相談
+    .detail-top
+      %ul.detail-text
+        %li.event-day
+          %p.day 9/1(土)〜9/15(日)
+        %li.event-title
+          豊橋市にて新築完成見学会開催【予約制】
+        %li.event-place
+          %p.title 場所：
+          %p 豊橋市豊橋町1-1
+        %li.event-time
+          %p.title 時間：
+          %p ①10:00〜 ②11:00〜 ③13:00〜 ④14:00〜
+        %li.parking-number
+          .event-parking
+            %p.title 駐車場：
+            %p ３台有り
+          .event-phone-number
+            %p.title 予約専用電話番号：
+            %p 000-000-0000
+      .event-image
+        =image_tag src="event_2"
+    .reservation-box
+      .reservation
+        %p.title 【予約制】
+        %p お電話またはイベント予約フォームよりご予約下さい
+      .reservation-system
+        .system-box
+          =link_to "#" do
+            参加予約する
+    .detail-box
+      .highlight-point
+        見どころポイント
+      %ul.text-box
+        %li.point
+          %p.num 1
+          %p.text 暮らしやすさが格段とアップする、LDK・水回りの回遊動線
+        %li.point
+          %p.num 2
+          %p.text 2世帯住宅ならではの工夫がいっぱいの間取
+        %li.point
+          %p.num 3
+          %p.text 地中熱エネルギーを利用し、冷暖房のエネルギー使用を低減するシステムを導入
+      .main
+        .main-image
+          =image_tag src="detail-main.jpg"
+        .info
+          .house-data
+            %p.title HOUSE DATA
+            %ul.data
+              %li【家族構成】ご夫婦+お子さま2人
+              %li【間取り】4LDK+WIC+納戸+パントリー
+              %li【敷地面積】343.00㎡/103.75坪
+              %li【延床面積】111.79㎡/33.75坪
+          .company-link
+            %p.title COMPANY LINK
+            .text
+              施工事例を下記のLinkよりご覧いただけます
+            %ul.link-box
+              %li.hp-link
+                =link_to "" do
+                  会社ホームページはこちら
+                  =icon("fas", "play-circle", class: "play-circle")
+              %li.sns-link
+                =link_to "#", class: "link" do
+                  =image_tag src="facebook.png", size: "25"
+                  %p Facebook
+              %li.sns-link
+                =link_to "#", class: "link" do
+                  =image_tag src="insta.jpg", size: "25"
+                  %p Instagram
+      .sub
+        .sub-image
+          =image_tag src="detail-sub_1.jpg"
+        .sub-image
+          =image_tag src="detail-sub_2.jpg"
+        .sub-image
+          =image_tag src="detail-sub_3.jpg"
+  
+  .top-link
+    .link-box
+      =link_to root_path do
+        TOPページにもどる
+  %hr
+  .bottom-link-contents
+    .smile-new-app
+      .text-box
+        %P.main Smileアプリを持ち歩こう!
+        %P.sub GET THE SMILE APP
+      .link-box
+        =link_to "" do
+          =image_tag src="app-store.png"
+        =link_to "" do
+          =image_tag src="google-play.png"
+    .smile-new-account
+      .text-box
+        %p.main 会員登録して簡単ネット予約!!
+        %p.sub JOIN THE SMILE
+      .link-box
+        .link-back
+          =link_to "" do
+            CHECK →

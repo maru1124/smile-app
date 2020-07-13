@@ -1,0 +1,328 @@
+.main-items-top {
+  font-family: serif;
+  padding-bottom: 50px;
+  .items-top {
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+    .title-contents {
+      width: 1080px;
+      height: 80px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        color: black;
+        font-weight: 300;
+        font-size: 30px;
+        padding-left: 50px;
+      }
+      .search-box {
+        padding-right: 50px;
+        .form {
+          .seach-form {
+            height: 30px;
+            width: 300px;
+            font-size: 15px;
+            text-align: center;
+          }
+          .seach-btn {
+            margin-left: 10px;
+            height: 30px;
+            width: 50px;
+            font-size: 15px;
+          } 
+        }
+      }
+    }
+    .category-contents {
+      padding-top: 10px;
+      ul.category-box {
+        display: flex;
+        width: 1080px;
+        margin: auto;
+        height: 60px;
+        border: 1px groove;
+        border-right: transparent; /* 下辺が透明になる */
+        li {
+          width: 12.5%;
+          text-align: center;
+          border-right: 1px groove;
+          a {
+            text-decoration: none;
+          }
+          p.jap {
+            padding-top: 7px;
+            color: #222222;
+          }
+          p.eng {
+            font-size: 12px;
+            color: #DEB887;
+          }
+        }
+      }
+    }
+  }
+  .image-contents {
+    width: 1080px;
+    margin: auto;
+    padding-top: 30px;
+    height: 450px;
+    ul.coordinate-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li.title {
+        font-size: 30px;
+      }
+      li.sub-title {
+        font-size: 28px;
+        padding-left: 30px;
+        padding-bottom: 3px;
+        .play-circle {
+          color: #DEB887;
+        }
+      }
+    }
+    .image-content {
+      padding-top: 20px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .items-contents {
+    width: 1080px;
+    margin: auto;
+    .new-items-contents {
+      width: 100%;
+      padding-top: 30px;
+      .new-items-title-box {
+        display: flex;
+        width: 100%;
+        height: 32px;
+        border-bottom: solid 1px #DEB887;
+        align-items: center;
+        justify-content: space-between;
+        ul.title-box {
+          display: flex;
+          li.eng {
+            font-size: 25px;
+          }
+          li.jap {
+            padding-top: 3px;
+            font-size: 22px;
+            padding-left: 20px;
+          }
+        }
+        ul.items-list-link {
+          display: flex;
+          align-items: center;
+          p {
+            font-size: 18px;
+            padding-right: 10px;
+          }
+          a {
+            padding-right: 20px;
+            text-decoration: none;
+            color: #DEB887;
+            font-size: 15px;
+          }
+        }
+      }
+      .new-items-box {
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 270px;
+        .item-num {
+          width: 18%;
+          text-align: center;
+          .items-image {
+            img {
+              width: 100%;
+            }
+          }
+          .name {
+            font-size: 15px;
+          }
+          .price {
+            font-size: 15px;
+            font-weight: bold;
+          }
+        }
+      }
+      .new-items-box-2 {
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        height: 270px;
+        justify-content: space-between;
+        .item-num {
+          width: 18%;
+          text-align: center;
+          .items-image {
+            img {
+              width: 100%;
+            }
+          }
+          .name {
+            font-size: 15px;
+          }
+          .price {
+            font-size: 15px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    
+    .ranking-items-contents {
+      width: 100%;
+      padding-top: 30px;
+      .ranking-items-title-box {
+        display: flex;
+        width: 100%;
+        height: 32px;
+        border-bottom: solid 1px #DEB887;
+        align-items: center;
+        justify-content: space-between;
+        ul.title-box {
+          display: flex;
+          li.eng {
+            font-size: 25px;
+          }
+          li.jap {
+            padding-top: 3px;
+            font-size: 22px;
+            padding-left: 20px;
+          }
+        }
+        ul.ranking-list {
+          display: flex;
+          align-items: center;
+          p {
+            font-size: 18px;
+            padding-right: 10px;
+          }
+          a {
+            padding-right: 20px;
+            text-decoration: none;
+            color: #DEB887;
+            font-size: 15px;
+          }
+        }
+      }
+      .ranking-items-box {
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 270px;
+        .item-num {
+          width: 18%;
+          text-align: center;
+          .items-image {
+            position: relative;
+            img {
+              width: 100%;
+            }
+            p {
+              position: absolute;
+              top: 0px;
+              height: 25px;
+              width: 25px;
+              background-color: #DEB887;
+            }
+          }
+          .name {
+            font-size: 15px;
+          }
+          .price {
+            font-size: 15px;
+            font-weight: bold;
+          }
+        }
+      }
+    }  
+  }
+  .bottom-link-contents {
+    padding-top: 60px;
+    display: flex;
+    width: 1080px;
+    margin: auto;
+    height: 300px;
+    justify-content: space-between;
+    .smile-new-app {
+      width: 48%;
+      background-image: url(/assets/smile-app.jpg);
+      background-size: cover;
+      .text-box {
+        padding-top: 20px;
+        padding-left: 10px;
+        p.main {
+          font-weight: bold;
+          font-size: 30px;
+        }
+        p.sub {
+          padding-left: 30px;
+          padding-top: 15px;
+          font-size: 15px;
+          font-weight: bold;
+        }
+      }
+      .link-box {
+        padding-top: 60px;
+        padding-left: 10px;
+        img {
+          width: 150px;
+          height: 50px;
+          text-decoration: none;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+    .smile-new-account {
+      width: 48%;
+      background-image: url(/assets/smile-account.jpg);
+      background-size: cover;
+      .text-box {
+        padding-top: 20px;
+        padding-left: 10px;
+        p.main {
+          font-weight: bold;
+          font-size: 30px;
+        }
+        p.sub {
+          padding-left: 30px;
+          padding-top: 15px;
+          font-size: 15px;
+          font-weight: bold;
+        }
+      }
+      .link-box {
+        padding-top: 60px;
+        padding-left: 30px;
+        .link-back {
+          background-color: black;
+          height: 50px;
+          width: 150px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;
+          a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

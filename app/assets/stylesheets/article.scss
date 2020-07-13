@@ -1,0 +1,134 @@
+.main-article {
+  font-family: serif;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  .article-content{
+    width: 1080px;
+    margin: auto;
+    padding-bottom: 150px;
+    .image {
+      width: 100%;
+      height: 600px;
+      background-image: url(/assets/article-top.jpg);
+      background-size: cover;
+      .top-number {
+        font-size: 60px;
+        padding: 8% 5%;
+        color: gray;
+      }
+      .top-info {
+        font-size: 30px;
+        color: white;
+        text-align: right;
+        padding-right: 15px;
+        padding-top: 270px;
+      }
+    }
+    .article-box {
+      .article-title {
+        width: 100%;
+        border-bottom: solid 2px black;
+        text-align: center;
+        padding-top: 50px;
+        p {
+          font-size: 43px;
+          color: #6289a4;
+        }
+      }
+      .article-lead {
+        padding-top: 30px;
+        width: 800px;
+        margin: auto;
+        text-align: center;
+        p {
+          font-size: 18px;
+        }
+        
+      }
+      .article-main-image {
+        padding-top: 30px;
+        text-align: center;
+        img {
+          width: 800px;
+        }
+      }
+      .article-text {
+        padding-top: 30px;
+        line-height: 40px;
+        font-size: 17px;
+      }
+      .article-sub-image {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        img {
+          width: 32%;
+        }
+      }
+    }
+    .pagination {
+      width: 100%;
+      height: 60px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      .page-search {
+        height: 100%;
+        width: 1080px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          text-decoration: none;
+          color: black;
+          width:2em;
+        }
+      }
+    }
+  }
+  .line {
+    background-color: #6289a4;
+    height: 15px;
+    width: 100%;  
+  }
+  .other-article {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    .other-article-title {
+      font-size: 50px;
+      border-bottom: solid 1px #6289a4;
+      width: 800px;
+      height: 70px;
+      margin: auto;
+    }
+    .other-article-box {
+      padding-top: 80px;
+      width: 90%;
+      margin: auto;
+      ul {
+        display: flex;
+        justify-content: space-between;
+       li {
+         width: 22%;
+         color: black;
+         font-weight: bold;
+         a {
+           color: #6289a4;
+           text-decoration: none;
+         }
+         img {
+           padding-top: 15px;
+           width: 100%;
+           height: 204px;
+         }
+
+       } 
+      }
+      
+    }
+  }
+}
