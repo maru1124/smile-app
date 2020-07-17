@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_07_13_162227) do
     t.string "town", null: false
     t.string "building"
     t.string "phone_number"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -121,9 +122,9 @@ ActiveRecord::Schema.define(version: 2020_07_13_162227) do
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "nickname", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
-    t.string "nickname", null: false
     t.string "first_name", null: false
     t.string "last_name", null: false
     t.string "first_name_kana", null: false

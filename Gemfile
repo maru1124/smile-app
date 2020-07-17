@@ -86,3 +86,4 @@ gem 'mini_magick'
 
 gem 'ancestry'
 gem 'devise'
+gem 'active_hash'

@@ -1,0 +1,25 @@
+.complete_pages
+  .header-complete
+    =link_to root_path do
+      Smile
+  %nav.development-bar
+    %ul.clearfix
+      %li.active
+        %p 会員情報
+        .circle
+      %li.active
+        %p 住所入力
+        .circle
+      %li.active
+        %p 登録完了
+        .circle2
+.main-complete-pages
+  .complete-registration
+    会員登録完了
+  .complete-content
+    .complete-text
+      %p ありがとうございます。会員登録が完了しました。
+    .complete-box
+      =link_to root_path do
+        SmileのTOPページへ
+= render 'shared/footer'

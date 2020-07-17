@@ -1,0 +1,82 @@
+.complete_pages {
+  font-size: 14px;
+  height: 200px;
+  text-align: center;
+  padding-top: 20px;
+  background-color: #EEEEEE;
+  font-family: serif;
+  .header-complete {
+    font-size: 80px;
+    font-weight: 500;
+    font-family: 'Kaushan Script', cursive;
+    a {
+      color: #6289a4;
+      text-decoration: none;
+    }
+  }
+  .development-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    .clearfix{
+      display: flex; 
+      .active{
+        p {
+          font-size: 13px;
+        }
+        .circle{
+        width: 15px;
+        height: 15px;
+        margin: 10px auto 0;
+        background: #ccc;
+        border-radius: 50%;
+        }
+      margin-right: 9px;
+      }
+      .circle2{
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color:#E3C700;;
+      margin: 0 auto;
+      margin-top: 10px;
+      }
+    }
+  }  
+}
+.main-complete-pages {
+  width: 100%;
+  font-family: serif;
+  text-align: center;
+  .complete-registration {
+    padding-top: 80px;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .complete-content {
+    padding-top: 50px;
+    margin-bottom: 120px;
+    .complete-text {
+      padding-bottom: 30px;
+    }
+    .complete-box {
+      width: 360px;
+      margin: auto;
+      border-radius: 4px;
+      background-color: #e3c700;
+      min-height: 48px;
+      border: 1px solid #ccc;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+}

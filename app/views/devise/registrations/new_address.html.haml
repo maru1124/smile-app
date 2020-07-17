@@ -1,0 +1,61 @@
+.signup-header
+  .header-signup
+    =link_to root_path do
+      Smile
+  %nav.development-bar
+    %ul.clearfix
+      %li.active
+        %p 会員情報
+        .circle
+      %li.active
+        %p 住所入力
+        .circle2
+      %li.active
+        %p 登録完了
+        .circle
+.main-content
+  .sighup-main
+    =form_with model: @address, url: {controller: "registrations", action: "create_address"}, local: true do |f|
+      .sighup-content
+        %ul.main-title
+          %li 住所入力
+          %li.required 必須
+        .sighup-form
+          .title
+            =f.label :post_number, '郵便番号'
+          .form
+            .text-form
+              =f.telephone_field :post_number, placeholder: "例) 123-4567"
+        .sighup-form
+          .title
+            =f.label :prefecture_id, '都道府県'
+          .form
+            .select-form
+              = f.collection_select :prefecture_id, Prefecture.all, :id, :name, prompt: "選択してください"
+        .sighup-form
+          .title
+            =f.label :city, '市町村'
+          .form
+            .text-form
+              =f.text_field :city, placeholder: "例) 田中市田中町"
+        .sighup-form
+          .title
+            =f.label :town, '番地'
+          .form
+            .text-form
+              =f.text_field :town, placeholder: "例) 田中1-1-1"
+        .sighup-form
+          .title
+            =f.label :building, '建物名'
+          .form
+            .text-form
+              =f.text_field :building, placeholder: "例) 田中ビル103"
+        .sighup-form
+          .title
+            =f.label :phone_number, '電話番号'
+          .form
+            .text-form
+              =f.text_field :phone_number, placeholder: "例) 123-4567-8910"
+        =f.submit '登録する', class: "btn-register", url: "complete_pages_path"
+
+= render 'shared/footer'

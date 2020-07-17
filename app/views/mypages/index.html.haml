@@ -1,0 +1,55 @@
+.header
+  = render 'shared/header'
+.main
+  .main-contents
+    .main-box
+      .event-box
+        %p 参加予定のイベント一覧
+    .side-box
+      .logout-box
+        =link_to destroy_user_session_path, method: :delete, class: "logout-link" do
+          .list-content
+            .name
+              ログアウト
+          .icon
+            = icon('fas', 'chevron-right')
+      .config-box
+        設定
+      =link_to "#", class: "side-page-link" do
+        .list-content
+          .name
+            プロフィール
+        .icon
+          = icon('fas', 'chevron-right')
+      =link_to "#", class: "side-page-link" do
+        .list-content
+          .name
+            住所変更
+        .icon
+          = icon('fas', 'chevron-right')
+      =link_to root_path, class: "side-page-link" do
+        .list-content
+          .name
+            クレジットカード登録
+        .icon
+          = icon('fas', 'chevron-right')
+      =link_to "#", class: "side-page-link" do
+        .list-content
+          .name
+            メール/パスワード
+        .icon
+          = icon('fas', 'chevron-right')
+      =link_to "#", class: "side-page-link" do
+        .list-content
+          .name
+            本人情報
+        .icon
+          = icon('fas', 'chevron-right')
+      =link_to "#", class: "side-page-link" do
+        .list-content
+          .name
+            電話番号の確認
+        .icon
+          = icon('fas', 'chevron-right')
+.footer
+  = render 'shared/footer'

@@ -1,0 +1,24 @@
+.signin-header
+  .header-signin
+    =link_to root_path do
+      Smile
+.signin-main-content
+  = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    .signup-main
+      .signup-content
+        .no-account-user
+          %p.text アカウントをお持ちでない方はこちら
+        .signup-link
+          =link_to new_user_registration_path do
+            新規会員登録
+        %hr
+        .signup-form
+          .text-form
+            =f.email_field :email, placeholder: "メールアドレス"
+          .text-form
+            =f.password_field :password, placeholder: "パスワード", id: "password"
+        =f.submit 'ログイン', class: "btn-login", url: "root_path"
+        .forget-password
+          = link_to "#" do
+            パスワードをお忘れの方
+= render 'shared/footer'
