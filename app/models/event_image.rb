@@ -1,6 +1,6 @@
 class EventImage < ApplicationRecord
-  validates :top_image, presence: true
+  validates :image, presence: true
 
-  belongs_to :event
-  # mount_uploader :image, ImageUploader
+  belongs_to :event, optional: true
+  mount_uploader :image, EventImagesUploader
 end

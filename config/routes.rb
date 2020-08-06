@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   end
 
   resources :complete_pages, only: [:index]
-  resources :event, only:[:index, :new, :show]
+  resources :event, only:[:index, :new, :create, :show]
   resources :article, only:[:index] 
   resources :movie, only:[:index] 
   resources :items, only:[:index] 

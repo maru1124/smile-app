@@ -17,7 +17,10 @@ class CreateEvents < ActiveRecord::Migration[5.2]
       t.string :data_floor_plan, null: false
       t.string :data_site_area, null: false
       t.string :data_total_area, null: false
-
+      t.string :url_link_c
+      t.string :url_link_f
+      t.string :url_link_i
+      t.integer :user_id, foreign_key: true
       t.timestamps
     end
   end

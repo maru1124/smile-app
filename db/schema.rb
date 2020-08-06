@@ -60,11 +60,7 @@ ActiveRecord::Schema.define(version: 2020_07_13_162227) do
   end
 
   create_table "event_images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "top_image", null: false
-    t.string "main_image", null: false
-    t.string "sub_image_1", null: false
-    t.string "sub_image_2", null: false
-    t.string "sub_image_3", null: false
+    t.string "image", null: false
     t.bigint "event_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -88,6 +84,10 @@ ActiveRecord::Schema.define(version: 2020_07_13_162227) do
     t.string "data_floor_plan", null: false
     t.string "data_site_area", null: false
     t.string "data_total_area", null: false
+    t.string "url_link_c"
+    t.string "url_link_f"
+    t.string "url_link_i"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -103,12 +103,14 @@ ActiveRecord::Schema.define(version: 2020_07_13_162227) do
   create_table "items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.string "price", null: false
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "content"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -117,6 +119,7 @@ ActiveRecord::Schema.define(version: 2020_07_13_162227) do
     t.string "title"
     t.string "image"
     t.string "url"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
