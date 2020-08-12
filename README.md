@@ -1,34 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
 # アプリ名
 住宅情報アプリ 「Smile」 
 
 # 概要
 * ハウジングイベントの閲覧、登録店のみ投稿・編集・削除
-* 特集記事の閲覧 (フロントのみ・サーバー未実装)
+* 特集記事の閲覧 
 * DIY動画の閲覧、登録店のみ投稿・編集・削除 (フロントのみ・サーバー未実装)
 * インテリアのネットショッピング、登録店のみ出品 (フロントのみ・サーバー未実装)
 
@@ -41,7 +18,7 @@ Things you may want to cover:
 ## ・前職での経験を参考にアプリを設計しました。
 
 前職で発行していた住宅情報誌では年4回の季刊誌であったため、イベントや見学会等のタイムリーな情報を発信することができませんでした。
-紙媒体の良さとネット媒体の良さをメディアミックスさせた情報を発信することができるアプリです。
+ネット媒体の良さであるタイムリーな情報を発信することができるアプリです。
 
 ![smile_READEME.jpg](app/assets/images/smile_READEME.jpg)
 
@@ -59,7 +36,7 @@ Things you may want to cover:
 DIY動画では、アプリの利用者が楽しめるだけでなく、動画を通じて、工務店の得意とする技術やコンセプトを伝えれる場としての活用も目的としています。また、新規獲得のきっかけの1つとなるよう、DIY動画から企業の作業員や雰囲気を伝えることもできます。
 
 ## ・インテリアのネットショップで収益・利用者数のUP
-インテリアは家の購入前後でも常に必要な情報であるため、登録者数や利用者アップのコンテンツとして。また、実際にDIY動画で製作した家具なども購入可能にすることで地球に優しいリサイクル♪
+インテリアは家の購入前後でも常に必要な情報であるため、登録者数や利用者数アップのコンテンツとして追加。また、実際にDIY動画で製作した家具なども購入可能にすることで地球に優しいリサイクル♪
 
 ## ・アプリの収益のイメージ
 アプリの規模としては、利用者数80万人が目標です。
