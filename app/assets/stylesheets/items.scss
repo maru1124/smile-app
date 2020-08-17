@@ -258,7 +258,7 @@
     justify-content: space-between;
     .smile-new-app {
       width: 48%;
-      background-image: url(/assets/smile-app.jpg);
+      background-image: image-url('smile-app.jpg');
       background-size: cover;
       .text-box {
         padding-top: 20px;
@@ -289,7 +289,7 @@
     }
     .smile-new-account {
       width: 48%;
-      background-image: url(/assets/smile-account.jpg);
+      background-image: image-url('smile-account.jpg');
       background-size: cover;
       .text-box {
         padding-top: 20px;

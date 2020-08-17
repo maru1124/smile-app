@@ -10,7 +10,7 @@
     .image {
       width: 100%;
       height: 600px;
-      background-image: url(/assets/article-top.jpg);
+      background-image: image-url('article-top.jpg');
       background-size: cover;
       .top-number {
         font-size: 60px;
